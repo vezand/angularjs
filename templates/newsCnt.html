@@ -1,0 +1,13 @@
+<style>
+.nav, .pagination, .panel-title a { cursor: pointer; }
+h3{margin-top: 10px; color: #000000; text-align: center;}
+</style>
+<div id="container" class="container noselect" style="word-wrap: break-word;">
+	<h3 class="ttl" ng-bind-html="news_arr.TITLE"></h3>
+	<div id="test"></div>
+	<div>
+		<div style="margin: 10px; text-align: center; vertical-align: top;"><img ng-src="{{news_arr.FILE1}}"/></div>
+		<div class="text-justify">{{news_arr.TOPIK}}</div>
+		<div style="clear: both;"></div>
+	</div>
+</div>

@@ -1,0 +1,12 @@
+<style>
+.form-control {width: auto; padding: 6px 0px;}
+.pagination {margin: 10px 0px;}
+</style>
+<div id="container" class="container" style="background: #f2f2f2;">
+	<div ng-repeat="(key, val) in title_arr" style="padding: 0px 10px;">
+		<h3>{{val}}</h3>
+		<h5 ng-repeat="(key1, val1) in title_arr1[key]">
+			<a href="#/presentation/cnt/{{key1}}">{{val1}}</a>
+		</h5>
+	</div>
+</div>

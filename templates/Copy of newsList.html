@@ -1,0 +1,12 @@
+<style>
+.form-control {width: auto; padding: 6px 0px;}
+.pagination {margin: 10px 0px;}
+</style>
+<div id="container" class="container">
+	<ul style="padding: 0px;">
+		<li data-ng-repeat="news in info" class="itemHolder">
+			<img src="img/png.png"/> <a href="#/news/cnt/{{news.REC_ID}}">{{news.TITLE}}</a>
+		</li>
+	</ul>
+	<pagination page="0" limit-per-page="limitPerPage" nr-qty="5" limit="50" ln="ln"></pagination>
+</div>

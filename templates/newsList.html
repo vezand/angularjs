@@ -1,0 +1,23 @@
+<style>
+.form-control {width: auto; padding: 6px 0px;}
+.pagination {margin: 10px 0px;}
+.title {font-weight: bold; font-size: 15px; text-align: center; padding: 10px 0px;}
+.date {color: gray; font-size: 11px; text-align: right;}
+</style>
+<div id="container" class="container" infinite-scroll-immediate-check="false" infinite-scroll='loadMore()' infinite-scroll-distance='0'>
+	<div style="margin: 10px;">
+		<select class="form-control" style="width: 100%; text-align: center;" ng-model="cur_cat">
+			<option ng-selected="key == cur_cat" ng-repeat="(key, val) in news_cat" value="{{key}}" translate="NEWS_CAT_{{val}}"></option>
+		</select>
+	</div>
+	<div ng-repeat="news in news_sort" style="margin: 10px; background-color: #FFFFFF; word-break: break-all;">
+		<div style="margin: 10px;">
+			<div class="title"><a href="#/news/cnt/{{news_arr[news].REC_ID}}">{{news_arr[news].TITLE}}</a></div>
+			<div class="date">{{news_arr[news].DZ}}</div>
+		</div>
+		<div style="margin: 10px;">{{news_arr[news].TOPIK}}</div>
+		<div style="text-align: center"><img style="margin: 10px;" ng-src="{{news_arr[news].FILE1}}"/></div>
+		<div style="text-align: right; padding: 10px 15px 15px 10px;"><a href="#/news/cnt/{{news_arr[news].REC_ID}}" translate="READ_MORE"></a></div>
+	</div>
+	<div ng-show="preloader" style="text-align: center; margin-bottom: 10px;"><img src="img/loading.gif"/></div>
+</div>

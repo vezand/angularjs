@@ -1,0 +1,59 @@
+<div class="aside" tabindex="0" role="dialog" ng-controller="loginnedCtrl">
+	<div class="aside-dialog">
+		<div class="aside-header" ng-show="title">
+			<button type="button" class="close" ng-click="$hide()">×</button>
+			<h4 class="aside-title ng-binding" translate="TITLE"></h4>
+		</div>
+		<div class="aside-content">
+			<div class="aside-body" style="padding: 0px;">
+				<ul style="padding: 0px; margin: 0px;">
+					<li class="info2">
+						<span class="glyphicon glyphicon-home" aria-hidden="true"></span> <a href="#/" ng-click="$hide()" translate="MENU_MAIN"></a>
+					</li>
+					<li class="info2">
+						<span class="glyphicon glyphicon-film" aria-hidden="true"></span> <a href="#/presentation/" ng-click="$hide()" translate="PRESENTATION"></a>
+					</li>
+					<li class="info2">
+						<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+						<a href="#/news/" ng-click="$hide()" translate="NEWS_LIST"></a>
+					</li>
+					<li class="info2" ng-show="newsCat" style="padding-left:30px;">
+						<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+						<a href="#/news/0" ng-click="$hide()" translate="NEWS_CAT_1"></a>
+					</li>
+					<li class="info2" ng-show="newsCat" style="padding-left:30px;">
+						<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+						<a href="#/news/1" ng-click="$hide()" translate="NEWS_CAT_3"></a>
+					</li>
+					<li class="info2" ng-show="newsCat" style="padding-left:30px;">
+						<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+						<a href="#/news/2" ng-click="$hide()" translate="NEWS_CAT_5"></a>
+					</li>
+					
+					<li class="info2">
+						<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+						<a href="#/contacts/" ng-click="$hide()" translate="MENU_CONTACTS"></a>
+					</li>
+					<li class="info2" style="border-bottom: 2px solid #bfbfbf;">
+						<a href="#/lang/" ng-click="$hide()">
+							<img style="width: 15px;" ng-src="img/{{ln|uppercase}}.png"/>
+							<span translate="CHANGE_LN"></span>
+						</a>
+					</li>
+					<li class="info2" ng-show="loggined">
+						<span class="glyphicon glyphicon-user" aria-hidden="true"></span> <a ng-click="$hide()" href="#/profile/" translate="MENU_PROFILE"></a>
+					</li>
+					<li class="info2 last" ng-show="!loggined">
+						<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> <a href="#/login" ng-click="$hide()" translate="LOG_IN"></a>
+					</li>
+					<li class="info2 last" ng-show="loggined">
+						<span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> <a href="#/logout" ng-click="$hide()" translate="LOG_OUT"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="aside-footer">
+				<button type="button" class="btn btn-default" ng-click="$hide()" translate="CLOSE_BTN"></button>
+			</div>
+		</div>
+	</div>
+</div>

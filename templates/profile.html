@@ -1,0 +1,167 @@
+<style>
+.tbl_header {border-collapse: collapse; width: 100%; margin: 20px 5px 10px;}
+.tbl_header th {font-size: 18px;}
+.tbl_header td {text-align: right; padding-right: 10px;}
+.table-striped th { width: 150px;}
+.table-striped td input, .table-striped td select {border: solid 1px #cccccc; width: 100%;}
+</style>
+<div class="container">
+	<table class="tbl_header">
+		<tr>
+			<th translate="PROFILE_PERSONAL_INFO"></th>
+			<td><span ng-click="edit.personal = !edit.personal;" ng-show="!edit.personal" class="glyphicon glyphicon-pencil" aria-hidden="true"></span></td>
+		</tr>
+	</table>
+	
+	<table class="table table-striped">
+		<tr>
+			<th translate="PROFILE_NAME"></th>
+			<td>
+				<span ng-show="!edit.personal">{{profile.NAME}}</span>
+				<span ng-show="edit.personal"><input type="text" ng-model="profile.NAME" value="{{profile.NAME}}"/></span>
+			</td>
+		</tr>
+		<tr>
+			<th translate="PROFILE_SNAME"></th>
+			<td>
+				<span ng-show="!edit.personal">{{profile.SNAME}}</span>
+				<span ng-show="edit.personal"><input type="text" ng-model="profile.SNAME" value="{{profile.SNAME}}"/></span>
+			</td>
+		</tr>
+		<tr>
+			<th translate="PROFILE_DRZ"></th>
+			<td>
+				<span ng-show="!edit.personal">{{profile.DRZ | date:'yyyy-MM-dd'}}</span>
+				<span ng-show="edit.personal">
+				
+					<quick-datepicker time-format='null' date-format='yyyy-MM-dd' disable-datepicker="true" disable-timepicker='true' disable-clear-button='true' name='profile.DRZ' ng-model='profile.DRZ' required></quick-datepicker>
+					
+				</span>
+			</td>
+		</tr>
+		<tr>
+			<th translate="PROFILE_SEX"></th>
+			<td>
+				<span ng-show="!edit.personal" translate="SEX_{{profile.SEX}}"></span>
+				<span ng-show="edit.personal">
+					<select ng-model="profile.SEX" style="width: 100%; height: 24px;">
+						<option value="0" translate="SEX_0"></option>
+						<option value="1" translate="SEX_1"></option>
+					</select>
+				</span>
+			</td>
+		</tr>
+		<tr ng-show="edit.personal">
+			<td colspan="2" style="text-align: right;">
+				<button tyle="button" ng-click="edit.personal = false;" class="btn btn-primary">Отменить</button>
+				<button type="button" ng-click="change_profile('personal');edit.personal = false;" class="btn btn-primary">Сохранить</button>
+			</td>
+		</tr>
+	</table>
+
+	<table class="tbl_header">
+		<tr>
+			<th translate="PROFILE_CONTACT_INFO"></th>
+			<td><span ng-click="edit.contact = !edit.contact;" ng-show="!edit.contact" class="glyphicon glyphicon-pencil" aria-hidden="true"></span></td>
+		</tr>
+	</table>
+	
+	<table class="table table-striped">
+		<tr>
+			<th translate="PROFILE_STRANA"></th>
+			<td>
+				<span ng-show="!edit.contact">{{profile.STRANA_NAME}}</span>
+				<span ng-show="edit.contact">
+					<select ng-options="country.cc as country.name for country in strana_arr" ng-model="profile.STRANA"></select>
+				</span>
+			</td>
+		</tr>
+		<tr>
+			<th translate="PROFILE_GOROD"></th>
+			<td>
+				<span ng-show="!edit.contact">{{profile.GOROD}}</span>
+				<span ng-show="edit.contact"><input type="text" ng-model="profile.GOROD" value="{{profile.GOROD}}"/></span>
+			</td>
+		</tr>
+		<tr>
+			<th translate="PROFILE_RAJON"></th>
+			<td>
+				<span ng-show="!edit.contact">{{profile.RAJON}}</span>
+				<span ng-show="edit.contact"><input type="text" ng-model="profile.RAJON" value="{{profile.RAJON}}"/></span>
+			</td>
+		</tr>
+		<tr>
+			<th translate="PROFILE_ADRES"></th>
+			<td>
+				<span ng-show="!edit.contact">{{profile.ADRES}}</span>
+				<span ng-show="edit.contact"><input type="text" ng-model="profile.ADRES" value="{{profile.ADRES}}"/></span>
+			</td>
+		</tr>
+		<tr>
+			<th translate="PROFILE_PINDEX"></th>
+			<td>
+				<span ng-show="!edit.contact">{{profile.PINDEX}}</span>
+				<span ng-show="edit.contact"><input type="text" ng-model="profile.PINDEX" value="{{profile.PINDEX}}"/></span>
+			</td>
+		</tr>
+		<tr>
+			<th translate="PROFILE_PHONE"></th>
+			<td>
+				<span ng-show="!edit.contact">{{profile.PHONE}}</span>
+				<span ng-show="edit.contact"><input type="text" ng-model="profile.PHONE" value="{{profile.PHONE}}"/></span>
+			</td>
+		</tr>
+		<tr>
+			<th translate="PROFILE_EMAIL"></th>
+			<td>{{profile.EMAIL}}</td>
+		</tr>
+		<tr>
+			<th translate="PROFILE_SKYPE"></th>
+			<td>
+				<span ng-show="!edit.contact">{{profile.SKYPE}}</span>
+				<span ng-show="edit.contact"><input type="text" ng-model="profile.SKYPE" value="{{profile.SKYPE}}"/></span>
+			</td>
+		</tr>
+		<tr ng-show="edit.contact">
+			<td colspan="2" style="text-align: right;">
+				<button tyle="button" ng-click="edit.contact = false;" class="btn btn-primary">Отменить</button>
+				<button type="button" ng-click="change_profile('contact');edit.contact = false;" class="btn btn-primary">Сохранить</button>
+			</td>
+		</tr>
+	</table>
+
+	<table class="tbl_header">
+		<tr>
+			<th translate="PROFILE_USER_INFO"></th>
+			<td><span ng-click="edit.user = !edit.user;" ng-show="!edit.user" class="glyphicon glyphicon-pencil" aria-hidden="true"></span></td>
+		</tr>
+	</table>
+
+	<table class="table table-striped">
+		<tr>
+			<th>UID:</th>
+			<td>{{profile.UID}}</td>
+		</tr>
+		<tr>
+			<th translate="PROFILE_AVATARA"></th>
+			<td><img src="{{profile.AVATARA}}"/></td>
+		</tr>
+		<tr>
+			<th translate="PROFILE_LOGIN"></th>
+			<td>{{profile.LOGIN}}</td>
+		</tr>
+		<tr>
+			<th translate="PROFILE_NICK"></th>
+			<td>
+				<span ng-show="!edit.user">{{profile.NICK}}</span>
+				<span ng-show="edit.user"><input type="text" ng-model="profile.NICK" value="{{profile.NICK}}"/></span>
+			</td>
+		</tr>
+		<tr ng-show="edit.user">
+			<td colspan="2" style="text-align: right;">
+				<button tyle="button" ng-click="edit.user = false;" class="btn btn-primary">Отменить</button>
+				<button type="button" ng-click="change_profile('user');edit.user = false;" class="btn btn-primary">Сохранить</button>
+			</td>
+		</tr>
+	</table>
+</div>

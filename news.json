@@ -1,0 +1,183 @@
+{
+	"ru":{
+		"1": {
+			"title": "КОМПАНИЯ EMGOLDEX",
+			"data": {
+				"1": "Данные о компании",
+				"2": "География компании",
+				"3": "Статистика компании",
+				"4": "Цель компании",
+				"5": "Возможности компании"
+			}
+		},
+		"2": {
+			"title": "ПРОДУКТ КОМПАНИИ",
+			"data": {
+				"1": "Какой продукт компании?",
+				"2": "Что такое Золото?",
+				"3": "Как производятся слитки золота?",
+				"4": "Как определить подлинность слитков?",
+				"5": "Почему необходимо покупать и иметь физическое золото в слитках?",
+				"6": "Как угадать курс золота?"
+			}
+		},
+		"3": {
+			"title": "ЗОЛОТОЙ БИЗНЕС",
+			"data": {
+				"1": "На чем строится бизнес?",
+				"2": "Для чего Маркетинговая программа",
+				"3": "Твой Доход в компании",
+				"4": "Ты хоть раз задавал себе эти вопросы?",
+				"5": "Что предлагает компания Emgoldex?",
+				"6": "Как работает Золотой бизнес?",
+				"7": "В чем суть золотого Бизнеса?",
+				"8": "Как работают компании?",
+				"9": "В чем выгоды работы с нашей компанией?",
+				"10": "Ещё сомневаешься?"
+			}
+		},
+		"4": {
+			"title": "МАРКЕТИНГОВАЯ ПРОГРАММА",
+			"data": {
+				"1": "Как можно начать свой золотой бизнес?",
+				"2": "Как работает система продаж?",
+				"3": "Что такое стол заказов?",
+				"4": "Как работает система заказов?",
+				"5": "Как рассчитывается прибыль?",
+				"6": "Когда клиент получает свой первый доход?"
+			}
+		},
+		"5": {
+			"title": "ЗОЛОТАЯ КАРЬЕРА",
+			"data": {
+				"1": "Как построить свою Золотую карьеру?",
+				"2": "Как начать карьерный рост?",
+				"3": "Кем является клиент компании?",
+				"4": "В чем успех золотого бизнеса?",
+				"5": "Отзывы о компании",
+				"6": "Еще сомневаешься?"
+			}
+		}
+	},
+	"en": {
+		"1": {
+			"title": "THE EMGOLDEX COMPANY",
+			"data": {
+				"1": "Information about the Company",
+				"2": "Geography",
+				"3": "Statistics",
+				"4": "Goal",
+				"5": "Possibilities"
+			}
+		},
+		"2": {
+			"title": "THE PRODUCT OF THE COMPANY",
+			"data": {
+				"1": "What is the Product of the Company?",
+				"2": "What is Gold?",
+				"3": "How are gold bars produced?",
+				"4": "How to identify gold bar authenticity?",
+				"5": "Why is it necessary to buy and have physical gold in bars?",
+				"6": "How to guess the best gold price?"
+			}
+		},
+		"3": {
+			"title": "GOLD BUSINESS",
+			"data": {
+				"1": "What is the basis of the business?",
+				"2": "What is the purpose of the Marketing Program?",
+				"3": "Your income in the Company.",
+				"4": "Have you ever thought these questions?",
+				"5": "What does the Emgoldex company offer?",
+				"6": "How does the Order System operate?",
+				"7": "How does Gold Business work?",
+				"8": "What is the essence of Gold Business?",
+				"9": "What are the benefits of cooperation with our company?",
+				"10": "Are you still in doubt?"
+			}
+		},
+		"4": {
+			"title": "THE MARKETING PROGRAM",
+			"data": {
+				"1": "How to start your own Gold Business?",
+				"2": "How does the system of sales work?",
+				"3": "What is the Table of Orders?",
+				"4": "How does the Order System operate?",
+				"5": "How is the profit calculated?",
+				"6": "When does a customer get the first income?"
+			}
+		},
+		"5": {
+			"title": "GOLD CAREER",
+			"data": {
+				"1": "How to make your own Gold career?",
+				"2": "How to make your career grow?",
+				"3": "What is a customer of the Company?",
+				"4": "What makes your Gold Business successful?",
+				"5": "Company reviews",
+				"6": "Are you still in doubt?"
+			}
+		}
+	},
+	"es": {
+		"1": {
+			"title": "LA COMPAÑÍA EMGOLDEX",
+			"data": {
+				"1": "Información sobre la Compañía",
+				"2": "Geografía",
+				"3": "Estadísticas",
+				"4": "Objetivo",
+				"5": "Posibilidades"
+			}
+		},
+		"2": {
+			"title": "EL PRODUCTO DE LA COMPAÑÍA",
+			"data": {
+				"1": "¿Cuál es el Producto de la Compañía?",
+				"2": "¿Qué es el Oro?",
+				"3": "¿Cómo se fabrican los lingotes de oro?",
+				"4": "¿Cómo identificar la autenticidad de los lingotes de oro?",
+				"5": "¿Por qué es necesario comprar y adquirir lingotes de oro físicos?",
+				"6": "¿Cómo calcular el mejor precio del oro?"
+			}
+		},
+		"3": {
+			"title": "EL NEGOCIO DEL ORO",
+			"data": {
+				"1": "¿Cuáles son las bases del negocio?",
+				"2": "¿Cuál es el propósito del Programa de Marketing?",
+				"3": "Sus ganancias en la Compañía",
+				"4": "¿Cuáles son las bases del negocio?",
+				"5": "¿Se ha planteado alguna vez estas preguntas?",
+				"6": "¿Qué ofrece la compañía Emgoldex?",
+				"7": "¿Cómo opera el Sistema de Pedidos?",
+				"8": "¿Cómo funciona el Negocio del Oro?",
+				"9": "¿Cuál es la esencia del Negocio del Oro?",
+				"10": "¿Cuáles son los beneficios de la cooperación con nuestra compañía?",
+				"11": "¿Aún tiene dudas?"
+			}
+		},
+		"4": {
+			"title": "EL PROGRAMA DE MARKETING",
+			"data": {
+				"1": "¿Cómo empezar su propio Negocio del Oro?",
+				"2": "¿Cómo funciona el sistema de ventas?",
+				"3": "¿Qué es una Tabla de Pedidos?",
+				"4": "¿Cómo opera el Sistema de Pedidos?",
+				"5": "¿Cuál es el beneficio estimado?",
+				"6": "¿Cuándo recibe el cliente su primera ganancia?"
+			}
+		},
+		"5": {
+			"title": "CARRERA EN EL ORO",
+			"data": {
+				"1": "¿Cómo realizar su propia carrera en el Oro?",
+				"2": "¿Cómo hacer que su carrera crezca?",
+				"3": "¿Quién es el cliente de la Compañía?",
+				"4": "¿Qué hace a su Negocio del Oro tener éxito?",
+				"5": "Reseñas de Emgoldex",
+				"6": "¿Aún tiene dudas?"
+			}
+		}
+	}
+}
