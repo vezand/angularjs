@@ -7,7 +7,7 @@ angular
 		HeaderButtons.setIsMenu(true);
 		$scope.language = $rootScope.language;
 		
-		dialogs.error('This is my error message');
+		dialogs.error('Test', "test");
 		
 		$scope.formSubmit = {
 			submit: function() {

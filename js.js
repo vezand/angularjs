@@ -16,7 +16,7 @@ var newsApp = angular.module('newsApp', [
 		'infinite-scroll',
 		'validator',
 		'dialogs.main',
-		// 'dialogs.default-translations',
+
 		'validator.rules'
 	])
 	.factory('HeaderButtons', function ($location) {
